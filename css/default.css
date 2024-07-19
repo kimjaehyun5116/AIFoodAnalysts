@@ -1,0 +1,136 @@
+body {
+  margin-top: 10px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120vh;
+  color: white;
+}
+
+.container {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap; /* 가로로 배치하고 자동 줄바꿈 */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  min-height: 70vh;
+}
+
+h1 {
+  color: #ffffff; /* 타이틀 색상 흰색 */
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* 타이틀과 프로그램 링크 사이 간격 */
+}
+
+.program-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 15px;
+  background-color: #444444;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.program-link:hover {
+  background-color: #666666; /* 버튼 호버 배경색 밝은 회색 */
+}
+
+.program-link1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  padding: 15px;
+  background-color: #444444;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.program-link1:hover {
+  background-color: #666666; /* 버튼 호버 배경색 밝은 회색 */
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: #222222;
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+}
+
+footer p {
+  margin: 0;
+  color: #ffffff; /* 푸터 텍스트 색상 흰색 */
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 768px) {
+  .body {
+    min-height: auto;
+  }
+
+  .container {
+    padding: 0 10px; /* 좌우 여백 축소 */
+    gap: 10px;
+  }
+
+  .program-link {
+    width: 45%; /* 작은 화면에서 두 개씩 배치 */
+  }
+
+  /* 광고 스타일 수정 */
+  .kakao_ad_area {
+    width: 100%; /* 광고를 화면 너비에 맞춤 */
+    height: auto; /* 광고 높이를 자동 조정 */
+  }
+}
+
+@media (max-width: 480px) {
+  .body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column; /* 작은 화면에서 세로 배치 */
+  }
+
+  .program-link {
+    width: 80%;
+    max-width: none; /* 최대 너비 해제 */
+    font-size: 16px; /* 폰트 사이즈 축소 */
+  }
+
+  .program-link1 {
+    width: 80%;
+    max-width: none; /* 최대 너비 해제 */
+    font-size: 16px; /* 폰트 사이즈 축소 */
+    margin-bottom: 50px;
+  }
+
+  /* 광고 스타일 수정 */
+  .kakao_ad_area {
+    width: 100%; /* 광고를 화면 너비에 맞춤 */
+    height: auto; /* 광고 높이를 자동 조정 */
+  }
+}
